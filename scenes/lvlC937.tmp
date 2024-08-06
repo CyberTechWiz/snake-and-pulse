@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://chvmqd7r1h3i7"]
+
+[ext_resource type="Script" path="res://scenes/lvl_1.gd" id="1_3ojlo"]
+[ext_resource type="PackedScene" uid="uid://bt3dggl2p6ssf" path="res://scenes/Apple.tscn" id="4_yca7a"]
+[ext_resource type="PackedScene" uid="uid://3o25pwr3refe" path="res://scenes/player/player.tscn" id="5_2khqk"]
+
+[node name="lvl 1" type="Node" groups=["Apples"]]
+script = ExtResource("1_3ojlo")
+
+[node name="Player" parent="." instance=ExtResource("5_2khqk")]
+
+[node name="Apple" parent="." groups=["Apples"] instance=ExtResource("4_yca7a")]
+position = Vector2(35, -40)
+
+[node name="SpawnApplesTimer" type="Timer" parent="."]
+
+[connection signal="start_new_game" from="." to="Player" method="new_game"]
+[connection signal="game_over" from="Player" to="." method="_on_player_game_over"]
+[connection signal="game_over" from="Player" to="Apple" method="_on_player_game_over"]
+[connection signal="timeout" from="SpawnApplesTimer" to="." method="_on_spawn_apples_timer_timeout"]

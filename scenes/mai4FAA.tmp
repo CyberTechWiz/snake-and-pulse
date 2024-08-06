@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://chvmqd7r1h3i7"]
+
+[ext_resource type="PackedScene" uid="uid://bt3dggl2p6ssf" path="res://scenes/healthy_food.tscn" id="1_8j2hw"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_thqe6"]
+[ext_resource type="PackedScene" uid="uid://bahr3d8g4nlv4" path="res://scenes/player/player_body.tscn" id="2_dcft3"]
+[ext_resource type="PackedScene" uid="uid://n4ubgnc4y586" path="res://scenes/player/player_head.tscn" id="3_wnmbx"]
+[ext_resource type="PackedScene" uid="uid://3o25pwr3refe" path="res://scenes/player/player.tscn" id="5_e067e"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_thqe6")
+player_had_scene = ExtResource("3_wnmbx")
+player_body_segment_scene = ExtResource("2_dcft3")
+healthy_food_scene = ExtResource("1_8j2hw")
+cell_count = null
+cell_size = null
+
+[node name="Player" parent="." instance=ExtResource("5_e067e")]
+
+[node name="Healthy food" parent="." instance=ExtResource("1_8j2hw")]
+position = Vector2(35, -40)
+
+[node name="SpawnHealthyFoodTimer" type="Timer" parent="."]
+wait_time = 5.0
+
+[connection signal="grow_snake" from="Healthy food" to="." method="_on_healthy_food_grow_snake"]
+[connection signal="timeout" from="SpawnHealthyFoodTimer" to="." method="_on_spawn_healthy_food_timer_timeout"]

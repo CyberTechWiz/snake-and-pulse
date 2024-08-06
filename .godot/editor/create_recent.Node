@@ -1,0 +1,9 @@
+TileMap
+Node2D
+CanvasLayer
+Node
+Timer
+VisibleOnScreenEnabler2D
+CollisionShape2D
+AnimatedSprite2D
+Area2D

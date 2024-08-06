@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt3dggl2p6ssf"]
+
+[ext_resource type="Script" path="res://scenes/Apple.gd" id="1_62u8v"]
+[ext_resource type="Texture2D" uid="uid://c4ytnwn66y58h" path="res://art/sprites food/apple.png" id="2_4msed"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8tftt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4msed")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_100b1"]
+height = 20.0
+
+[node name="Healthy food" type="Node2D"]
+script = ExtResource("1_62u8v")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8tftt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_100b1")
+
+[node name="LifeTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="timeout" from="LifeTimer" to="." method="_on_life_timer_timeout"]

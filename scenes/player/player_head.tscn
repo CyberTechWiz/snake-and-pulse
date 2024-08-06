@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://n4ubgnc4y586"]
+
+[ext_resource type="Texture2D" uid="uid://dlvucpyky6iw1" path="res://art/sprites snake/snake 1/snake head sprite 1.png" id="1_e0718"]
+
+[sub_resource type="GDScript" id="GDScript_hb07q"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_duome"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_e0718")
+}],
+"loop": true,
+"name": &"snake 1",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdllh"]
+size = Vector2(20, 17)
+
+[node name="Player" type="Area2D"]
+script = SubResource("GDScript_hb07q")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_duome")
+animation = &"snake 1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_cdllh")

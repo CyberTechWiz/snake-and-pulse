@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://3o25pwr3refe"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_lqus1"]
+[ext_resource type="PackedScene" uid="uid://n4ubgnc4y586" path="res://scenes/player/player_head.tscn" id="2_ve72v"]
+[ext_resource type="PackedScene" uid="uid://bahr3d8g4nlv4" path="res://scenes/player/player_body.tscn" id="3_3hdpc"]
+
+[node name="Player" type="Node"]
+script = ExtResource("1_lqus1")
+player_had_scene = ExtResource("2_ve72v")
+player_body_segment_scene = ExtResource("3_3hdpc")
+
+[node name="MoveTimer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="timeout" from="MoveTimer" to="." method="_on_move_timer_timeout"]
