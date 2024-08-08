@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bahr3d8g4nlv4"]
 
-[ext_resource type="Texture2D" uid="uid://cjmo6cwicnie4" path="res://art/sprites snake/snake 1/snake sprite 1.png" id="1_gb6e4"]
+[ext_resource type="Texture2D" uid="uid://3t2l8la2wcds" path="res://art/sprites snake/snake 1/snake sprite 1.png" id="1_gb6e4"]
 
 [sub_resource type="GDScript" id="GDScript_44a28"]
 script/source = "extends Node2D
@@ -30,6 +30,7 @@ animations = [{
 size = Vector2(21, 20)
 
 [node name="player body" type="Area2D"]
+position = Vector2(10, 10)
 scale = Vector2(1.008, 1)
 collision_mask = 0
 script = SubResource("GDScript_44a28")

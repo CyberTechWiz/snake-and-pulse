@@ -1,31 +1,52 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722928870
+::res://::1723084001
 icon.svg::CompressedTexture2D::481478520892560236::1722442019::1722442023::1::::<><>::
-Player.gd::GDScript::-1::1722919123::0::1::::<>Node<>::
+README.md::TextFile::-1::1722929979::0::1::::<><>::
 ::res://art/::1722543159
 ::res://art/button/::1722543233
 button play 1.png::CompressedTexture2D::5041150127615570639::1722473802::1722543233::1::::<><>::
 button play 2.png::CompressedTexture2D::6853238456877171603::1722513503::1722543233::1::::<><>::
 button snake 1.png::CompressedTexture2D::7803355293322867408::1722474335::1722543232::1::::<><>::
 button snake 2.png::CompressedTexture2D::5905574739251857718::1722513539::1722543232::1::::<><>::
-::res://art/menus/::1722543233
+::res://art/menus/::1723006336
 snake1.png::CompressedTexture2D::8042470542194786504::1722473475::1722543233::1::::<><>::
 snake2.png::CompressedTexture2D::307911047411844619::1722518458::1722543233::1::::<><>::
-::res://art/sprites food/::1722545095
-apple.png::CompressedTexture2D::6859040914216966577::1722545051::1722545095::1::::<><>::
-burger.png::CompressedTexture2D::6058798687884148650::1722545064::1722545095::1::::<><>::
-donut.png::CompressedTexture2D::5215361692010807836::1722545074::1722545095::1::::<><>::
-::res://art/sprites snake/::1722543148
-::res://art/sprites snake/snake 1/::1722545095
-snake head sprite 1.png::CompressedTexture2D::7975910000789266654::1722544923::1722545095::1::::<><>::
-snake sprite 1.png::CompressedTexture2D::5430219030086067021::1722544990::1722545095::1::::<><>::
-::res://scenes/::1722921384
-Apple.gd::GDScript::-1::1722917888::0::1::::<>Node2D<>::
-Apple.tscn::PackedScene::3778004489052109625::1722920649::0::1::::<><>::res://scenes/Apple.gd<>uid://c4ytnwn66y58h::::res://art/sprites food/apple.png
+tilemap.png::CompressedTexture2D::3948921358878235855::1723006320::1723006336::1::::<><>::
+::res://art/sprites food/::1723000486
+apple.png::CompressedTexture2D::4553067859912834057::1722997470::1723000486::1::::<><>::
+banana.png::CompressedTexture2D::927012862250946761::1722999778::1723000486::1::::<><>::
+bread.png::CompressedTexture2D::7802020448438707441::1723000206::1723000486::1::::<><>::
+burger.png::CompressedTexture2D::2114615300400684980::1722997455::1723000486::1::::<><>::
+cake.png::CompressedTexture2D::3432638526929834848::1723000036::1723000486::1::::<><>::
+carrot.png::CompressedTexture2D::5039993372291899832::1722999310::1723000486::1::::<><>::
+corn.png::CompressedTexture2D::2556131993236315042::1722999629::1723000486::1::::<><>::
+cupcake.png::CompressedTexture2D::2884845233714159552::1722998955::1723000486::1::::<><>::
+donut.png::CompressedTexture2D::6535077282670149024::1722997441::1723000486::1::::<><>::
+eggplant.png::CompressedTexture2D::6362857786899833238::1722999384::1723000486::1::::<><>::
+ice_cream.png::CompressedTexture2D::4996851096117939711::1723000380::1723000486::1::::<><>::
+orange.png::CompressedTexture2D::5778745961615725531::1722998804::1723000486::1::::<><>::
+pizza.png::CompressedTexture2D::6853902137820533641::1722998581::1723000486::1::::<><>::
+soda.png::CompressedTexture2D::6252844592403035815::1722998649::1723000486::1::::<><>::
+::res://art/sprites snake/::1723001579
+::res://art/sprites snake/snake 1/::1723000486
+snake head sprite 1.png::CompressedTexture2D::6379535835325493277::1722997293::1723000486::1::::<><>::
+snake sprite 1.png::CompressedTexture2D::2006171552030042400::1722997387::1723000486::1::::<><>::
+::res://art/sprites snake/snake 2/::1723004504
+snake head sprite 2.png::CompressedTexture2D::184918246307149633::1723000942::1723004504::1::::<><>::
+snake sprite 2.png::CompressedTexture2D::3948352039019107798::1723000796::1723004504::1::::<><>::
+::res://art/sprites snake/snake 3/::1723004504
+snake head sprite 3.png::CompressedTexture2D::6328696492979573056::1723001353::1723004504::1::::<><>::
+snake sprite 3.png::CompressedTexture2D::3507637081239618732::1723001225::1723004504::1::::<><>::
+::res://scenes/::1723018459
 game_over_menu.tscn::PackedScene::9085817132224980867::1722908933::0::1::::<><>::
-lvl_1.gd::GDScript::-1::1722919922::0::1::::<>Node<>::
-lvl_1.tscn::PackedScene::5308272590114606488::1722921384::0::1::::<><>::res://scenes/lvl_1.gd<>uid://bt3dggl2p6ssf::::res://scenes/Apple.tscn<>uid://3o25pwr3refe::::res://scenes/player/player.tscn
-::res://scenes/player/::1722920649
-player.tscn::PackedScene::1995882665690026918::1722920649::0::1::::<><>::res://Player.gd<>uid://n4ubgnc4y586::::res://scenes/player/player_head.tscn<>uid://bahr3d8g4nlv4::::res://scenes/player/player_body.tscn
-player_body.tscn::PackedScene::2401953727938373323::1722916289::0::1::::<><>::uid://cjmo6cwicnie4::::res://art/sprites snake/snake 1/snake sprite 1.png
-player_head.tscn::PackedScene::973538383164550665::1722916289::0::1::::<><>::uid://dlvucpyky6iw1::::res://art/sprites snake/snake 1/snake head sprite 1.png
+::res://scenes/food/::1723018426
+Apple.gd::GDScript::-1::1723015875::0::1::::<>Node2D<>::
+Apple.tscn::PackedScene::3778004489052109625::1723018426::0::1::::<><>::res://scenes/food/Apple.gd<>uid://b54smk8niy186::::res://art/sprites food/apple.png
+::res://scenes/levels/::1723018562
+lvl_1.gd::GDScript::-1::1723018339::0::1::::<>Node<>::
+lvl_1.tscn::PackedScene::5308272590114606488::1723018562::0::1::::<><>::res://scenes/levels/lvl_1.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://3o25pwr3refe::::res://scenes/player/player.tscn
+::res://scenes/player/::1723018467
+Player.gd::GDScript::-1::1723018339::0::1::::<>Node<>::
+player.tscn::PackedScene::1995882665690026918::1723018467::0::1::::<><>::res://scenes/player/Player.gd<>uid://n4ubgnc4y586::::res://scenes/player/player_head.tscn<>uid://bahr3d8g4nlv4::::res://scenes/player/player_body.tscn
+player_body.tscn::PackedScene::2401953727938373323::1723009238::0::1::::<><>::uid://3t2l8la2wcds::::res://art/sprites snake/snake 1/snake sprite 1.png
+player_head.tscn::PackedScene::973538383164550665::1723016036::0::1::::<><>::uid://cw5ka10y1sdxt::::res://art/sprites snake/snake 1/snake head sprite 1.png

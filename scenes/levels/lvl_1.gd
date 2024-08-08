@@ -5,8 +5,10 @@ extends Node
 @export var apple_scene: PackedScene
 
 signal start_new_game
+signal food_was_eaten
 
 var snake_data
+var apples = []  # Глобальный массив для хранения ссылок на яблоки
 
 # сетка
 var cells : int = 24
@@ -31,34 +33,33 @@ func _process(delta):
 func new_game():
 	score = 0
 	$SpawnApplesTimer.start()
+	$Timer.start()
 	emit_signal("start_new_game")
 	move_apples()
 
 func move_apples():
-	print("Move apples function called")
 	while regen_apples:
 		regen_apples = false
 		food_pos = Vector2(randi_range(0, cells - 1), randi_range(0, cells - 1))
-		
-		# Проверяем, что позиция не пересекается со змеей
 		for i in snake_data:
 			if food_pos == i:
 				regen_apples = true
-				break
-		
-		if not regen_apples:
-			# Создаем новый экземпляр яблока
-			var apple = apple_scene.instantiate()
-			apple.position = (food_pos * cell_size) + Vector2(0, cell_size)
-			add_child(apple)
-			apple.add_to_group("Apples")  # Добавляем яблоко в группу "Apples"
-			print("Apple created at position: ", apple.position)
+	$Apple.position = (food_pos * cell_size) + Vector2(cell_size / 2, cell_size / 2)
+	regen_apples = true
 
 func _on_player_game_over():
 	$SpawnApplesTimer.stop()
 
 
-func _on_spawn_apples_timer_timeout():
-	regen_apples = true
-	print("Spawn apples timer timeout")
-	move_apples()
+# Проверка на поедание еды (только яблоки)
+func check_food_eaten():
+	if snake_data[0] == food_pos:
+		score += 1
+		emit_signal("food_was_eaten")
+		move_apples()
+		
+
+
+func _on_timer_timeout():
+	check_food_eaten()
+	print(score)

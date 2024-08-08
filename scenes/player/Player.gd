@@ -6,12 +6,15 @@ extends Node
 signal food_was_eaten
 signal game_over
 
+var lvl
+var food_pos : Vector2
+
 # сетка
 var cells : int = 24
 var cell_size : int = 20
 
+var tolerance = 1.0  # Допуск в пикселях для сравнения координат
 var game_started : bool = false
-var food_pos : Vector2
 
 # Переменные для змеи
 var old_data : Array
@@ -28,7 +31,14 @@ var can_move : bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	lvl = get_parent()  # Получаем ссылку на родительский узел
+	if lvl != null:
+		if lvl.has_method("get_food_pos"):
+			food_pos = lvl.get_food_pos()
+		else:
+			print("Parent node does not have method 'get_food_pos'")
+	else:
+		print("Parent node is null")
 		
 func new_game():
 	move_direction = up
@@ -47,20 +57,21 @@ func generate_snake():
 func add_segment(pos):
 	snake_data.append(pos)
 	var snakeSegment = player_body_segment_scene.instantiate()
-	snakeSegment.position = (pos * cell_size) + Vector2(0, cell_size)
+	snakeSegment.position = (pos * cell_size) + Vector2(cell_size / 2, cell_size / 2)
 	add_child(snakeSegment)
 	snake.append(snakeSegment)
 	
 func add_head(pos):
 	snake_data.append(pos)
 	var snakeSegment = player_had_scene.instantiate()
-	snakeSegment.position = (pos * cell_size) + Vector2(0, cell_size)
+	snakeSegment.position = (pos * cell_size) + Vector2(cell_size / 2, cell_size / 2)
 	add_child(snakeSegment)
 	snake.append(snakeSegment)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	move_snake()
+	
 	
 func move_snake():
 	if can_move:
@@ -101,10 +112,9 @@ func _on_move_timer_timeout():
 	for i in range(len(snake_data)):
 		if i > 0:
 			snake_data[i] = old_data[i-1]
-		snake[i].position = (snake_data[i] * cell_size) + Vector2(0, cell_size)
+		snake[i].position = (snake_data[i] * cell_size) + Vector2(cell_size / 2, cell_size / 2)
 	check_out_of_bounds()
 	check_self_eaten()
-	check_food_eaten()
 
 #Если голова змейки находится за пределом сетки то конец игры
 func check_out_of_bounds():
@@ -117,19 +127,6 @@ func check_self_eaten():
 		if snake_data[0] == snake_data[i]:
 			end_game()
 
-# Проверка на поедание еды (только яблоки)
-func check_food_eaten():
-	for child in get_tree().get_nodes_in_group("Apples"):
-		if child is Node2D:
-			if child.has_method("get") and child.get("food_type") != null:
-				var child_pos = child.position
-				if snake_data[0] == child_pos / cell_size:
-					add_segment(old_data[-1])
-					emit_signal("food_was_eaten", child.get("food_type"))
-					child.queue_free()
-			else:
-				print("Warning: Node in group 'Apples' does not have required properties.")
-			
 			
 func end_game():
 	$MoveTimer.stop()
@@ -138,3 +135,7 @@ func end_game():
 
 func get_snake_data():
 	return snake_data
+
+
+func _on_lvl_1_food_was_eaten():
+	add_segment(old_data[-1])
