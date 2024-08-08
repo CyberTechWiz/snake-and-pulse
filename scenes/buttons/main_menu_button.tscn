@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4ntwsspekdo3"]
+
+[ext_resource type="Texture2D" uid="uid://yrnvxpjriwot" path="res://art/button/main menu 1.png" id="1_c3ljf"]
+[ext_resource type="Texture2D" uid="uid://b0djpgbyjojws" path="res://art/button/main menu 3.png" id="2_m4vx6"]
+[ext_resource type="Texture2D" uid="uid://caderxj4pqq4o" path="res://art/button/main menu 2.png" id="3_h8af0"]
+
+[node name="MainMenuButton" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_c3ljf")
+texture_pressed = ExtResource("2_m4vx6")
+texture_hover = ExtResource("3_h8af0")

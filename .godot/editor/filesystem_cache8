@@ -1,17 +1,43 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723084001
+::res://::1723123791
 icon.svg::CompressedTexture2D::481478520892560236::1722442019::1722442023::1::::<><>::
 README.md::TextFile::-1::1722929979::0::1::::<><>::
-::res://art/::1722543159
-::res://art/button/::1722543233
-button play 1.png::CompressedTexture2D::5041150127615570639::1722473802::1722543233::1::::<><>::
-button play 2.png::CompressedTexture2D::6853238456877171603::1722513503::1722543233::1::::<><>::
-button snake 1.png::CompressedTexture2D::7803355293322867408::1722474335::1722543232::1::::<><>::
-button snake 2.png::CompressedTexture2D::5905574739251857718::1722513539::1722543232::1::::<><>::
-::res://art/menus/::1723006336
-snake1.png::CompressedTexture2D::8042470542194786504::1722473475::1722543233::1::::<><>::
-snake2.png::CompressedTexture2D::307911047411844619::1722518458::1722543233::1::::<><>::
+::res://art/::1723121918
+::res://art/button/::1723108678
+button bush 1.png::CompressedTexture2D::8916869727571088551::1723108364::1723108678::1::::<><>::
+button bush 2.png::CompressedTexture2D::1169647409565478459::1723108340::1723108678::1::::<><>::
+button bush 3.png::CompressedTexture2D::2071487920176306780::1723108331::1723108678::1::::<><>::
+button play 1.png::CompressedTexture2D::772276046146235812::1723108296::1723108678::1::::<><>::
+button play 2.png::CompressedTexture2D::1616478497635134715::1723108270::1723108677::1::::<><>::
+button play 3.png::CompressedTexture2D::6002933000689448335::1723108258::1723108677::1::::<><>::
+button snake 1.png::CompressedTexture2D::7661335971928681622::1723108217::1723108677::1::::<><>::
+button snake 2.png::CompressedTexture2D::3616441901211637844::1723108153::1723108677::1::::<><>::
+button snake 3.png::CompressedTexture2D::6166883784235968657::1723108131::1723108677::1::::<><>::
+cross 1.png::CompressedTexture2D::7478327877259650467::1723108059::1723108677::1::::<><>::
+cross 2.png::CompressedTexture2D::6452955880448339225::1723108045::1723108677::1::::<><>::
+main menu 1.png::CompressedTexture2D::1720454723350856695::1723108018::1723108677::1::::<><>::
+main menu 2.png::CompressedTexture2D::4779308950394444280::1723107853::1723108677::1::::<><>::
+main menu 3.png::CompressedTexture2D::4147908465537505506::1723108623::1723108677::1::::<><>::
+red cross 1.png::CompressedTexture2D::4550904581695729417::1723108592::1723108677::1::::<><>::
+red cross 2.png::CompressedTexture2D::1349887984708920836::1723108502::1723108677::1::::<><>::
+replay 1.png::CompressedTexture2D::6386567294539770982::1723108472::1723108677::1::::<><>::
+replay 2.png::CompressedTexture2D::2856254125360479347::1723108444::1723108677::1::::<><>::
+replay 3.png::CompressedTexture2D::3020583877024503110::1723108437::1723108677::1::::<><>::
+scorepng 1.png::CompressedTexture2D::1535337118930561302::1723108417::1723108677::1::::<><>::
+scorepng 2.png::CompressedTexture2D::9040081902275255670::1723108378::1723108677::1::::<><>::
+scorepng 3.png::CompressedTexture2D::4224104621956337092::1723108371::1723108677::1::::<><>::
+::res://art/fonts/::1723114416
+tahoma.ttf::FontFile::2940674959141692352::1632896602::1723114416::1::::<><>::
+::res://art/menus/::1723113082
+description.png::CompressedTexture2D::5256450819830861716::1723101575::1723105650::1::::<><>::
+game over.png::CompressedTexture2D::8911350612929318342::1723111443::1723111469::1::::<><>::
+lvl 1.png::CompressedTexture2D::1592351241555059938::1723113068::1723113082::1::::<><>::
+snake1.png::CompressedTexture2D::2976214703691351893::1723105301::1723105650::1::::<><>::
 tilemap.png::CompressedTexture2D::3948921358878235855::1723006320::1723006336::1::::<><>::
+::res://art/sounds/::1723123783
+apple-bite-short.mp3::AudioStreamMP3::1448881769594953700::1723121678::1723121924::1::::<><>::
+nut.mp3::AudioStreamMP3::983395371757116491::1723121675::1723121924::1::::<><>::
+Yume 2kki OST - Cog Maze (Extended).mp3::AudioStreamMP3::4251587412184700638::1679002448::1723123791::1::::<><>::
 ::res://art/sprites food/::1723000486
 apple.png::CompressedTexture2D::4553067859912834057::1722997470::1723000486::1::::<><>::
 banana.png::CompressedTexture2D::927012862250946761::1722999778::1723000486::1::::<><>::
@@ -37,16 +63,23 @@ snake sprite 2.png::CompressedTexture2D::3948352039019107798::1723000796::172300
 ::res://art/sprites snake/snake 3/::1723004504
 snake head sprite 3.png::CompressedTexture2D::6328696492979573056::1723001353::1723004504::1::::<><>::
 snake sprite 3.png::CompressedTexture2D::3507637081239618732::1723001225::1723004504::1::::<><>::
-::res://scenes/::1723018459
-game_over_menu.tscn::PackedScene::9085817132224980867::1722908933::0::1::::<><>::
-::res://scenes/food/::1723018426
-Apple.gd::GDScript::-1::1723015875::0::1::::<>Node2D<>::
-Apple.tscn::PackedScene::3778004489052109625::1723018426::0::1::::<><>::res://scenes/food/Apple.gd<>uid://b54smk8niy186::::res://art/sprites food/apple.png
-::res://scenes/levels/::1723018562
-lvl_1.gd::GDScript::-1::1723018339::0::1::::<>Node<>::
-lvl_1.tscn::PackedScene::5308272590114606488::1723018562::0::1::::<><>::res://scenes/levels/lvl_1.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://3o25pwr3refe::::res://scenes/player/player.tscn
-::res://scenes/player/::1723018467
-Player.gd::GDScript::-1::1723018339::0::1::::<>Node<>::
-player.tscn::PackedScene::1995882665690026918::1723018467::0::1::::<><>::res://scenes/player/Player.gd<>uid://n4ubgnc4y586::::res://scenes/player/player_head.tscn<>uid://bahr3d8g4nlv4::::res://scenes/player/player_body.tscn
+::res://scenes/::1723106721
+::res://scenes/buttons/::1723108971
+main_menu_button.tscn::PackedScene::4449927944241343604::1723108971::0::1::::<><>::uid://yrnvxpjriwot::::res://art/button/main menu 1.png<>uid://b0djpgbyjojws::::res://art/button/main menu 3.png<>uid://caderxj4pqq4o::::res://art/button/main menu 2.png
+replay_button.tscn::PackedScene::7511388890348511373::1723108971::0::1::::<><>::uid://cw8x3h1hruan3::::res://art/button/replay 1.png<>uid://bjbgts4mwadmc::::res://art/button/replay 3.png<>uid://bgxuc85jv0p5d::::res://art/button/replay 2.png
+::res://scenes/food/::1723112621
+Apple.gd::GDScript::-1::1723112568::0::1::::<>Node2D<>::
+Apple.tscn::PackedScene::3778004489052109625::1723112621::0::1::::<><>::res://scenes/food/Apple.gd<>uid://b54smk8niy186::::res://art/sprites food/apple.png
+::res://scenes/levels/::1723123181
+lvl_1.gd::GDScript::-1::1723117024::0::1::::<>Node<>::
+lvl_1.tscn::PackedScene::5308272590114606488::1723123181::0::1::::<><>::res://scenes/levels/lvl_1.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://3o25pwr3refe::::res://scenes/player/player.tscn<>uid://d2pic0kmax8f4::::res://scenes/menus/game_over_menu.tscn<>uid://wxl165xaak4a::::res://art/menus/lvl 1.png<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf
+Task_completed.gd::GDScript::-1::1723116872::0::1::::<>RichTextLabel<>::
+::res://scenes/menus/::1723123171
+game_over_menu.gd::GDScript::-1::1723123113::0::1::::<>CanvasLayer<>::
+game_over_menu.tscn::PackedScene::9085817132224980867::1723123171::0::1::::<><>::uid://dy7yv347bnmkk::::res://art/menus/game over.png<>res://scenes/menus/game_over_menu.gd<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn<>uid://dfatqidpiop7b::::res://scenes/buttons/replay_button.tscn<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf
+::res://scenes/player/::1723122028
+Player.gd::GDScript::-1::1723121834::0::1::::<>Node<>::
+player.tscn::PackedScene::1995882665690026918::1723122028::0::1::::<><>::res://scenes/player/Player.gd<>uid://n4ubgnc4y586::::res://scenes/player/player_head.tscn<>uid://bahr3d8g4nlv4::::res://scenes/player/player_body.tscn<>uid://oamm4cyuq75p::::res://art/sounds/nut.mp3
 player_body.tscn::PackedScene::2401953727938373323::1723009238::0::1::::<><>::uid://3t2l8la2wcds::::res://art/sprites snake/snake 1/snake sprite 1.png
 player_head.tscn::PackedScene::973538383164550665::1723016036::0::1::::<><>::uid://cw5ka10y1sdxt::::res://art/sprites snake/snake 1/snake head sprite 1.png
+Sound_biting.gd::GDScript::-1::1723121985::0::1::::<>AudioStreamPlayer2D<>::

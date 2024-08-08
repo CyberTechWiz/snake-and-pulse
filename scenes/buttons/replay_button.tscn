@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfatqidpiop7b"]
+
+[ext_resource type="Texture2D" uid="uid://cw8x3h1hruan3" path="res://art/button/replay 1.png" id="1_2lb02"]
+[ext_resource type="Texture2D" uid="uid://bjbgts4mwadmc" path="res://art/button/replay 3.png" id="2_1fgg6"]
+[ext_resource type="Texture2D" uid="uid://bgxuc85jv0p5d" path="res://art/button/replay 2.png" id="3_kethu"]
+
+[node name="ReplayButton" type="TextureButton"]
+texture_normal = ExtResource("1_2lb02")
+texture_pressed = ExtResource("2_1fgg6")
+texture_hover = ExtResource("3_kethu")

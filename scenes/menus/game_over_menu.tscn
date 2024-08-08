@@ -1,0 +1,91 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2pic0kmax8f4"]
+
+[ext_resource type="Texture2D" uid="uid://dy7yv347bnmkk" path="res://art/menus/game over.png" id="1_77hhx"]
+[ext_resource type="Script" path="res://scenes/menus/game_over_menu.gd" id="1_r5xug"]
+[ext_resource type="PackedScene" uid="uid://b4ntwsspekdo3" path="res://scenes/buttons/main_menu_button.tscn" id="2_q28ux"]
+[ext_resource type="PackedScene" uid="uid://dfatqidpiop7b" path="res://scenes/buttons/replay_button.tscn" id="3_kks85"]
+[ext_resource type="FontFile" uid="uid://bh5qqs5whlyvo" path="res://art/fonts/tahoma.ttf" id="5_cqgrr"]
+
+[node name="GameOverMenu" type="CanvasLayer"]
+script = ExtResource("1_r5xug")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = -189.5
+offset_right = 254.0
+offset_bottom = 189.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_77hhx")
+
+[node name="MainMenuButton" parent="." instance=ExtResource("2_q28ux")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.0
+offset_top = 103.0
+offset_right = 81.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 3
+
+[node name="ReplayButton" parent="." instance=ExtResource("3_kks85")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = 15.0
+offset_right = 117.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 3
+
+[node name="ScoreLabel_on_game_over" type="RichTextLabel" parent="."]
+offset_left = 304.0
+offset_top = 85.0
+offset_right = 452.0
+offset_bottom = 188.0
+theme_override_colors/default_color = Color(0.329197, 0.386009, 0.363279, 1)
+theme_override_fonts/normal_font = ExtResource("5_cqgrr")
+theme_override_font_sizes/normal_font_size = 70
+text = "0"
+
+[node name="RecordText" type="Label" parent="."]
+offset_left = 224.0
+offset_top = 182.0
+offset_right = 287.0
+offset_bottom = 205.0
+theme_override_colors/font_color = Color(0.406528, 0.297707, 0.437199, 1)
+theme_override_fonts/font = ExtResource("5_cqgrr")
+text = "Рекорд:"
+
+[node name="Record" type="Label" parent="."]
+offset_left = 283.0
+offset_top = 182.0
+offset_right = 323.0
+offset_bottom = 205.0
+theme_override_colors/font_color = Color(0.515446, 0.256667, 0.295346, 1)
+text = "0"
+
+[node name="RecordText2" type="Label" parent="."]
+offset_left = 208.0
+offset_top = 206.0
+offset_right = 319.0
+offset_bottom = 229.0
+theme_override_colors/font_color = Color(0.357884, 0.389131, 0.301625, 1)
+theme_override_fonts/font = ExtResource("5_cqgrr")
+text = "Новый рекорд!"
+
+[connection signal="pressed" from="MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="ReplayButton" to="." method="_on_replay_button_pressed"]

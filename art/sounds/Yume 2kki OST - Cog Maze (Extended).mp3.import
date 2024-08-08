@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1tra2ggt8kb3"
+path="res://.godot/imported/Yume 2kki OST - Cog Maze (Extended).mp3-5da03512264dc29932c6ca2cdcb9b508.mp3str"
+
+[deps]
+
+source_file="res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3"
+dest_files=["res://.godot/imported/Yume 2kki OST - Cog Maze (Extended).mp3-5da03512264dc29932c6ca2cdcb9b508.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

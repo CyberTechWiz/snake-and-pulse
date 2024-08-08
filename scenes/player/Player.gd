@@ -7,7 +7,7 @@ signal food_was_eaten
 signal game_over
 
 var lvl
-var food_pos : Vector2
+var food_pos : Vector2 = Vector2(10, 10)
 
 # сетка
 var cells : int = 24
@@ -41,6 +41,7 @@ func _ready():
 		print("Parent node is null")
 		
 func new_game():
+	clear_snake()
 	move_direction = up
 	can_move = true
 	generate_snake()
@@ -138,4 +139,13 @@ func get_snake_data():
 
 
 func _on_lvl_1_food_was_eaten():
+	$Sound_biting.play()
 	add_segment(old_data[-1])
+
+
+#Очистка змейки для переигрывания уровня
+func clear_snake():
+	for segment in snake:
+		segment.queue_free()  # Удаляет сегмент из сцены
+	snake.clear()  # Очищает список сегментов
+	snake_data.clear()  # Очищает данные о позиции змейки
