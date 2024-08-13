@@ -84,3 +84,7 @@ func update_score(score):
 
 func _on_timer_chek_apple_timeout():
 	check_food_eaten()
+
+
+func get_file_path_lvl() -> String:
+	return "user://record_score.txt"

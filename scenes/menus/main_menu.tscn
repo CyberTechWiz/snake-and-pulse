@@ -1,0 +1,79 @@
+[gd_scene load_steps=17 format=3 uid="uid://dp8vmonf5i5cv"]
+
+[ext_resource type="Texture2D" uid="uid://binx26p6njhwv" path="res://art/menus/snake1.png" id="1_ksqu1"]
+[ext_resource type="Texture2D" uid="uid://v4y1pn22rixq" path="res://art/button/scorepng 1.png" id="2_22362"]
+[ext_resource type="Texture2D" uid="uid://b1ggneglh8egq" path="res://art/button/scorepng 3.png" id="3_p4372"]
+[ext_resource type="Texture2D" uid="uid://d12c3fl6k4wo1" path="res://art/button/scorepng 2.png" id="4_yaow5"]
+[ext_resource type="Texture2D" uid="uid://b53qy7abm80ft" path="res://art/button/red cross 1.png" id="5_83ty1"]
+[ext_resource type="Texture2D" uid="uid://th5ptk17nylg" path="res://art/button/red cross 2.png" id="6_uqfeq"]
+[ext_resource type="Texture2D" uid="uid://ladjklreiu41" path="res://art/button/button play 1.png" id="7_w4dtx"]
+[ext_resource type="Texture2D" uid="uid://crr4ouqmc00u2" path="res://art/button/button play 3.png" id="8_s5as2"]
+[ext_resource type="Texture2D" uid="uid://xbbfum2jpi40" path="res://art/button/button play 2.png" id="9_uif03"]
+[ext_resource type="Texture2D" uid="uid://dhfhc4il5fkpi" path="res://art/button/button snake 1.png" id="10_jtgvh"]
+[ext_resource type="Texture2D" uid="uid://ct4jw7ht024en" path="res://art/button/button snake 3.png" id="11_cpcci"]
+[ext_resource type="Texture2D" uid="uid://brr3jf3a4ito3" path="res://art/button/button snake 2.png" id="12_nueq1"]
+[ext_resource type="Texture2D" uid="uid://d0bnsoex4ty84" path="res://art/button/button bush 1.png" id="13_tt80y"]
+[ext_resource type="Texture2D" uid="uid://4rpdrr6kqs7u" path="res://art/button/button bush 3.png" id="14_n37ja"]
+[ext_resource type="Texture2D" uid="uid://qwt6l1igtn5t" path="res://art/button/button bush 2.png" id="15_gdv0w"]
+[ext_resource type="Texture2D" uid="uid://2ngkuln7n36h" path="res://art/menus/snake2.png" id="16_wmwjr"]
+
+[node name="Main_menu" type="CanvasLayer"]
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ksqu1")
+
+[node name="score_all_apples" type="TextureButton" parent="."]
+offset_left = 486.0
+offset_top = 49.0
+offset_right = 572.0
+offset_bottom = 89.0
+texture_normal = ExtResource("2_22362")
+texture_pressed = ExtResource("3_p4372")
+texture_hover = ExtResource("4_yaow5")
+stretch_mode = 0
+
+[node name="Red Cross" type="TextureButton" parent="."]
+offset_left = 547.0
+offset_top = 24.0
+offset_right = 587.0
+offset_bottom = 64.0
+texture_normal = ExtResource("5_83ty1")
+texture_hover = ExtResource("6_uqfeq")
+
+[node name="play" type="TextureButton" parent="."]
+offset_left = 236.0
+offset_top = 111.0
+offset_right = 422.0
+offset_bottom = 175.0
+texture_normal = ExtResource("7_w4dtx")
+texture_pressed = ExtResource("8_s5as2")
+texture_hover = ExtResource("9_uif03")
+stretch_mode = 3
+
+[node name="snake_skin_changer" type="TextureButton" parent="."]
+offset_left = 371.0
+offset_top = 336.0
+offset_right = 574.0
+offset_bottom = 376.0
+texture_normal = ExtResource("10_jtgvh")
+texture_pressed = ExtResource("11_cpcci")
+texture_hover = ExtResource("12_nueq1")
+stretch_mode = 0
+
+[node name="map_skin_changer" type="TextureButton" parent="."]
+offset_left = 82.0
+offset_top = 272.0
+offset_right = 196.0
+offset_bottom = 395.0
+texture_normal = ExtResource("13_tt80y")
+texture_pressed = ExtResource("14_n37ja")
+texture_hover = ExtResource("15_gdv0w")
+stretch_mode = 3
+
+[node name="levels background" type="TextureRect" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("16_wmwjr")

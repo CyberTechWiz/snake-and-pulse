@@ -20,9 +20,8 @@ texture_region_size = Vector2i(20, 20)
 tile_size = Vector2i(20, 20)
 sources/1 = SubResource("TileSetAtlasSource_tiql5")
 
-[node name="lvl 1" type="Node"]
+[node name="lvl_1" type="Node"]
 script = ExtResource("1_3ojlo")
-apple_scene = ExtResource("4_yca7a")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_oss7h")
