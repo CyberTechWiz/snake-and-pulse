@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 @export var player_had_scene: PackedScene
 @export var player_body_segment_scene: PackedScene
@@ -41,6 +41,7 @@ func _ready():
 		print("Parent node is null")
 		
 func new_game():
+	$StopDonut.stop()
 	clear_snake()
 	move_direction = up
 	can_move = true
@@ -130,9 +131,11 @@ func check_self_eaten():
 
 			
 func end_game():
+	$StopDonut.stop()
 	$MoveTimer.stop()
 	game_started = false
 	emit_signal("game_over")
+	stop_moving()
 
 func get_snake_data():
 	return snake_data
@@ -149,3 +152,23 @@ func clear_snake():
 		segment.queue_free()  # Удаляет сегмент из сцены
 	snake.clear()  # Очищает список сегментов
 	snake_data.clear()  # Очищает данные о позиции змейки
+
+
+func _on_stop_donut_timeout():
+	can_move = true
+	$MoveTimer.start()
+
+
+func _on_lvl_2_donut_was_eaten():
+	$MoveTimer.stop()
+	can_move = false
+	$StopDonut.start()
+
+
+func _on_lvl_1_main_menu():
+	$StopDonut.stop()
+	game_started = false
+	$MoveTimer.stop()
+	can_move = false
+
+

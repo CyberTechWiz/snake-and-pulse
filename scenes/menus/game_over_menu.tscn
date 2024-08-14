@@ -68,21 +68,21 @@ offset_right = 287.0
 offset_bottom = 205.0
 theme_override_colors/font_color = Color(0.406528, 0.297707, 0.437199, 1)
 theme_override_fonts/font = ExtResource("5_cqgrr")
-text = "Рекорд:"
+text = "Рекорд уровня:"
 
 [node name="Record" type="Label" parent="."]
-offset_left = 283.0
+offset_left = 340.0
 offset_top = 182.0
-offset_right = 323.0
+offset_right = 380.0
 offset_bottom = 205.0
 theme_override_colors/font_color = Color(0.515446, 0.256667, 0.295346, 1)
 text = "0"
 
 [node name="RecordText2" type="Label" parent="."]
-offset_left = 208.0
-offset_top = 206.0
-offset_right = 319.0
-offset_bottom = 229.0
+offset_left = 226.0
+offset_top = 207.0
+offset_right = 337.0
+offset_bottom = 230.0
 theme_override_colors/font_color = Color(0.357884, 0.389131, 0.301625, 1)
 theme_override_fonts/font = ExtResource("5_cqgrr")
 text = "Новый рекорд!"

@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://dp8vmonf5i5cv"]
+[gd_scene load_steps=18 format=3 uid="uid://dp8vmonf5i5cv"]
 
+[ext_resource type="Script" path="res://scenes/menus/main_menu.gd" id="1_i184v"]
 [ext_resource type="Texture2D" uid="uid://binx26p6njhwv" path="res://art/menus/snake1.png" id="1_ksqu1"]
 [ext_resource type="Texture2D" uid="uid://v4y1pn22rixq" path="res://art/button/scorepng 1.png" id="2_22362"]
 [ext_resource type="Texture2D" uid="uid://b1ggneglh8egq" path="res://art/button/scorepng 3.png" id="3_p4372"]
@@ -15,9 +16,10 @@
 [ext_resource type="Texture2D" uid="uid://d0bnsoex4ty84" path="res://art/button/button bush 1.png" id="13_tt80y"]
 [ext_resource type="Texture2D" uid="uid://4rpdrr6kqs7u" path="res://art/button/button bush 3.png" id="14_n37ja"]
 [ext_resource type="Texture2D" uid="uid://qwt6l1igtn5t" path="res://art/button/button bush 2.png" id="15_gdv0w"]
-[ext_resource type="Texture2D" uid="uid://2ngkuln7n36h" path="res://art/menus/snake2.png" id="16_wmwjr"]
+[ext_resource type="PackedScene" uid="uid://dueksy0ik7rmr" path="res://scenes/menus/leveles_menu.tscn" id="17_r1bro"]
 
 [node name="Main_menu" type="CanvasLayer"]
+script = ExtResource("1_i184v")
 
 [node name="background" type="TextureRect" parent="."]
 offset_right = 40.0
@@ -72,8 +74,19 @@ texture_pressed = ExtResource("14_n37ja")
 texture_hover = ExtResource("15_gdv0w")
 stretch_mode = 3
 
-[node name="levels background" type="TextureRect" parent="."]
+[node name="all_apple_score" type="Label" parent="."]
+offset_left = 514.0
+offset_top = 54.0
+offset_right = 585.0
+offset_bottom = 93.0
+scale = Vector2(1.30766, 1.30766)
+theme_override_colors/font_color = Color(0.268726, 0.402028, 0.32834, 1)
+text = "0"
+
+[node name="leveles menu" parent="." instance=ExtResource("17_r1bro")]
 visible = false
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("16_wmwjr")
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="playlvl1" from="leveles menu" to="." method="_on_leveles_menu_playlvl_1"]
+[connection signal="playlvl2" from="leveles menu" to="." method="_on_leveles_menu_playlvl_2"]
+[connection signal="playlvl3" from="leveles menu" to="." method="_on_leveles_menu_playlvl_3"]

@@ -11,7 +11,6 @@ var file_path_lvl
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	lvl = get_parent() 
-	#file_path_lvl = lvl.get_file_path_lvl()
 	if lvl != null:
 		if lvl.has_method("get_file_path_lvl"):
 			file_path_lvl = lvl.get_file_path_lvl()

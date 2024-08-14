@@ -1,12 +1,15 @@
 #Lvl 1
-# Собрать 20 яблок
-extends Node
+# Собрать 10 яблок
+extends Node2D
 
 @export var apple_scene: PackedScene
 
+signal main_menu
 signal start_new_game
 signal food_was_eaten
 signal Update_ScoreLabel_on_game_over(score)
+signal all_apple_score(score)
+signal update_all_apple_score
 
 var snake_data
 var apples = []  # Глобальный массив для хранения ссылок на яблоки
@@ -22,8 +25,16 @@ var regen_apples = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	pass
+
+func playlvl1():
+	$TileMap.show()
+	$Apple.show()
+	$"sidebar lvl1".show()
+	$"ScoreLabel".show()
 	$Background_music.play()
 	$GameOverMenu.hide()
+	$TaskCompleted.hide()
 	# Получаем ссылку на узел player
 	player = $Player
 	#получаем данные о змейке из сцены игрока
@@ -34,6 +45,7 @@ func _process(delta):
 	pass
 
 func new_game():
+	$Player.show()
 	$TaskCompleted.hide()
 	score = 0
 	update_score(score)
@@ -58,6 +70,8 @@ func _on_player_game_over():
 	emit_signal("Update_ScoreLabel_on_game_over", score)
 	$GameOverMenu.show()
 	$Timer_chek_apple.stop()
+	emit_signal("all_apple_score", score)
+	emit_signal("update_all_apple_score")
 	
 
 
@@ -87,4 +101,18 @@ func _on_timer_chek_apple_timeout():
 
 
 func get_file_path_lvl() -> String:
-	return "user://record_score.txt"
+	return "user://record_score_lvl1.txt"
+
+
+func _on_game_over_menu_main_menu():
+	$Player.hide()
+	$Background_music.stop()
+	$GameOverMenu.hide()
+	emit_signal("main_menu")
+
+
+func _on_main_menu_button_pressed():
+	$Player.hide()
+	$Background_music.stop()
+	$GameOverMenu.hide()
+	emit_signal("main_menu")

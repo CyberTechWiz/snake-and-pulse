@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://chvmqd7r1h3i7"]
+[gd_scene load_steps=12 format=3 uid="uid://chvmqd7r1h3i7"]
 
 [ext_resource type="Script" path="res://scenes/levels/lvl_1.gd" id="1_3ojlo"]
 [ext_resource type="Texture2D" uid="uid://bwi5fmpub3k1d" path="res://art/menus/tilemap.png" id="4_rg3y7"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://wxl165xaak4a" path="res://art/menus/lvl 1.png" id="6_aosvi"]
 [ext_resource type="FontFile" uid="uid://bh5qqs5whlyvo" path="res://art/fonts/tahoma.ttf" id="7_ma4u2"]
 [ext_resource type="AudioStream" uid="uid://b1tra2ggt8kb3" path="res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3" id="8_k4chf"]
+[ext_resource type="PackedScene" uid="uid://b4ntwsspekdo3" path="res://scenes/buttons/main_menu_button.tscn" id="9_i2m7s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tiql5"]
 texture = ExtResource("4_rg3y7")
@@ -20,7 +21,7 @@ texture_region_size = Vector2i(20, 20)
 tile_size = Vector2i(20, 20)
 sources/1 = SubResource("TileSetAtlasSource_tiql5")
 
-[node name="lvl_1" type="Node"]
+[node name="lvl_1" type="Node2D"]
 script = ExtResource("1_3ojlo")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -44,6 +45,7 @@ visible = false
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("6_aosvi")
+metadata/_edit_use_anchors_ = true
 
 [node name="ScoreLabel" type="RichTextLabel" parent="."]
 offset_left = 526.0
@@ -54,6 +56,7 @@ theme_override_colors/default_color = Color(0.323415, 0.280263, 0.465223, 1)
 theme_override_fonts/normal_font = ExtResource("7_ma4u2")
 theme_override_font_sizes/normal_font_size = 30
 text = "0"
+metadata/_edit_use_anchors_ = true
 
 [node name="TaskCompleted" type="Label" parent="."]
 offset_left = 489.0
@@ -63,17 +66,29 @@ offset_bottom = 180.0
 theme_override_colors/font_color = Color(0.34919, 0.404383, 0.122917, 1)
 theme_override_fonts/font = ExtResource("7_ma4u2")
 text = "Задание выполнено"
+metadata/_edit_use_anchors_ = true
 
 [node name="Background_music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_k4chf")
 volume_db = -6.613
 
+[node name="MainMenuButton" parent="." instance=ExtResource("9_i2m7s")]
+offset_left = 500.0
+offset_top = 436.0
+offset_right = 658.0
+offset_bottom = 483.0
+scale = Vector2(0.78973, 0.78973)
+stretch_mode = 0
+
 [connection signal="Update_ScoreLabel_on_game_over" from="." to="GameOverMenu" method="_on_lvl_1_update_score_label_on_game_over"]
 [connection signal="food_was_eaten" from="." to="Player" method="_on_lvl_1_food_was_eaten"]
 [connection signal="food_was_eaten" from="." to="Apple" method="_on_lvl_1_food_was_eaten"]
+[connection signal="main_menu" from="." to="Player" method="_on_lvl_1_main_menu"]
 [connection signal="start_new_game" from="." to="Player" method="new_game"]
 [connection signal="food_was_eaten" from="Player" to="Apple" method="_on_player_food_was_eaten"]
 [connection signal="game_over" from="Player" to="." method="_on_player_game_over"]
 [connection signal="game_over" from="Player" to="Apple" method="_on_player_game_over"]
 [connection signal="timeout" from="Timer_chek_apple" to="." method="_on_timer_chek_apple_timeout"]
+[connection signal="main_menu" from="GameOverMenu" to="." method="_on_game_over_menu_main_menu"]
 [connection signal="restart" from="GameOverMenu" to="." method="_on_game_over_menu_restart"]
+[connection signal="pressed" from="MainMenuButton" to="." method="_on_main_menu_button_pressed"]

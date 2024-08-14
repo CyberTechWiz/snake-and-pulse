@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bahr3d8g4nlv4" path="res://scenes/player/player_body.tscn" id="3_3hdpc"]
 [ext_resource type="AudioStream" uid="uid://oamm4cyuq75p" path="res://art/sounds/nut.mp3" id="4_5qct2"]
 
-[node name="Player" type="Node"]
+[node name="Player" type="Node2D"]
 script = ExtResource("1_lqus1")
 player_had_scene = ExtResource("2_ve72v")
 player_body_segment_scene = ExtResource("3_3hdpc")
@@ -16,4 +16,8 @@ wait_time = 0.15
 [node name="Sound_biting" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_5qct2")
 
+[node name="StopDonut" type="Timer" parent="."]
+wait_time = 2.0
+
 [connection signal="timeout" from="MoveTimer" to="." method="_on_move_timer_timeout"]
+[connection signal="timeout" from="StopDonut" to="." method="_on_stop_donut_timeout"]

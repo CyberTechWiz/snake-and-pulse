@@ -1,7 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5m8fmbfgdfa7"]
+[gd_scene load_steps=5 format=3 uid="uid://c5m8fmbfgdfa7"]
 
 [ext_resource type="PackedScene" uid="uid://dp8vmonf5i5cv" path="res://scenes/menus/main_menu.tscn" id="1_cc2ku"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_guw4u"]
+[ext_resource type="PackedScene" uid="uid://chvmqd7r1h3i7" path="res://scenes/levels/lvl_1.tscn" id="3_3ig4b"]
+[ext_resource type="PackedScene" uid="uid://ttjbrn3de57m" path="res://scenes/levels/lvl_2.tscn" id="4_pc3r1"]
 
 [node name="main" type="Node2D"]
+script = ExtResource("1_guw4u")
 
 [node name="Main_menu" parent="." instance=ExtResource("1_cc2ku")]
+
+[node name="lvl_1" parent="." instance=ExtResource("3_3ig4b")]
+
+[node name="lvl_2" parent="." instance=ExtResource("4_pc3r1")]
+
+[connection signal="playlvl1" from="Main_menu" to="." method="_on_main_menu_playlvl_1"]
+[connection signal="playlvl1" from="Main_menu" to="lvl_1" method="playlvl1"]
+[connection signal="playlvl2" from="Main_menu" to="." method="_on_main_menu_playlvl_2"]
+[connection signal="playlvl2" from="Main_menu" to="lvl_2" method="playlvl2"]
+[connection signal="all_apple_score" from="lvl_1" to="Main_menu" method="_on_lvl_1_all_apple_score"]
+[connection signal="main_menu" from="lvl_1" to="." method="_on_lvl_1_main_menu"]
+[connection signal="update_all_apple_score" from="lvl_1" to="Main_menu" method="update_all_apple_score"]
+[connection signal="all_apple_score" from="lvl_2" to="Main_menu" method="_on_lvl_1_all_apple_score"]
+[connection signal="main_menu" from="lvl_2" to="." method="_on_lvl_2_main_menu"]
+[connection signal="update_all_apple_score" from="lvl_2" to="Main_menu" method="update_all_apple_score"]
