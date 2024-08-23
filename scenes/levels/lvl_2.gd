@@ -160,7 +160,13 @@ func check_food_eaten():
 	if snake_data[0] == donut2_pos:
 		emit_signal("donut_was_eaten")
 		move_donut2()
-
+	if snake_data[0] == donut3_pos:
+		emit_signal("donut_was_eaten")
+		move_donut3()
+	if snake_data[0] == donut4_pos:
+		emit_signal("donut_was_eaten")
+		move_donut4()
+		
 func _on_game_over_menu_restart():
 	$GameOverMenu.hide()
 	new_game()

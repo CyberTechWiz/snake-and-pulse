@@ -1,12 +1,12 @@
+TextureRect
+TextureButton
 Label
 Node2D
 Timer
-TextureButton
 Node
 AudioStreamPlayer2D
 AudioStreamPlayer3D
 RichTextLabel
-TextureRect
 Button
 AnimatedSprite2D
 Sprite2D

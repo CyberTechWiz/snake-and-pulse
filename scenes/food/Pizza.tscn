@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bern21aarg6xt"]
+
+[ext_resource type="Script" path="res://scenes/food/Apple.gd" id="1_hjlim"]
+[ext_resource type="Texture2D" uid="uid://c4wc1cp76wwnx" path="res://art/sprites food/pizza.png" id="2_veql2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8tftt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_veql2")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Pizza" type="Node2D"]
+position = Vector2(-12, -12)
+script = ExtResource("1_hjlim")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8tftt")
+animation = &"new_animation"

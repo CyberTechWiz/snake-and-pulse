@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723654963
+::res://::1724279707
 icon.svg::CompressedTexture2D::481478520892560236::1722442019::1722442023::1::::<><>::
 README.md::TextFile::-1::1722929979::0::1::::<><>::
 ::res://art/::1723125398
@@ -26,7 +26,12 @@ replay 3.png::CompressedTexture2D::3020583877024503110::1723108437::1723108677::
 scorepng 1.png::CompressedTexture2D::1535337118930561302::1723108417::1723108677::1::::<><>::
 scorepng 2.png::CompressedTexture2D::9040081902275255670::1723108378::1723108677::1::::<><>::
 scorepng 3.png::CompressedTexture2D::4224104621956337092::1723108371::1723108677::1::::<><>::
-::res://art/button/levels/::1723544335
+::res://art/button/levels/::1724279751
+level1.png::CompressedTexture2D::6560423507626668417::1723565438::1723728539::1::::<><>::
+level2.png::CompressedTexture2D::6742875018218345585::1723809207::1723809378::1::::<><>::
+level3.png::CompressedTexture2D::5215530980032035103::1723811566::1723811760::1::::<><>::
+level4.png::CompressedTexture2D::780006287617148302::1724279408::1724279751::1::::<><>::
+level5.png::CompressedTexture2D::2441271935110768582::1724279683::1724279751::1::::<><>::
 lvl 1 1.png::CompressedTexture2D::3659654310422209709::1723369952::1723544335::1::::<><>::
 lvl 1 2.png::CompressedTexture2D::1223379729766760683::1723543880::1723544335::1::::<><>::
 lvl 1 3.png::CompressedTexture2D::7929724940656114761::1723543890::1723544335::1::::<><>::
@@ -48,6 +53,18 @@ lvl 6 3.png::CompressedTexture2D::3952925057797801322::1723543625::1723544335::1
 lvl 7 1.png::CompressedTexture2D::1295682623271747558::1723370095::1723544335::1::::<><>::
 lvl 7 2.png::CompressedTexture2D::726510962060564817::1723543564::1723544335::1::::<><>::
 lvl 7 3.png::CompressedTexture2D::7982743142015919714::1723543574::1723544335::1::::<><>::
+lvl 8 1.png::CompressedTexture2D::4374983800967554144::1723807308::1723808285::1::::<><>::
+lvl 8 2.png::CompressedTexture2D::5541404327247315966::1723807326::1723808285::1::::<><>::
+lvl 8 3.png::CompressedTexture2D::7066390685745213733::1723807353::1723808285::1::::<><>::
+lvl 9 1.png::CompressedTexture2D::8347788629397458545::1723807491::1723808285::1::::<><>::
+lvl 9 2.png::CompressedTexture2D::1079770057177155706::1723807527::1723808285::1::::<><>::
+lvl 9 3.png::CompressedTexture2D::3314678614236495135::1723807508::1723808285::1::::<><>::
+lvl 10 1.png::CompressedTexture2D::6637625687509911496::1723807780::1723808285::1::::<><>::
+lvl 10 2.png::CompressedTexture2D::3258451315201048041::1723807787::1723808285::1::::<><>::
+lvl 10 3.png::CompressedTexture2D::8578702629956802327::1723807795::1723808285::1::::<><>::
+lvl 11 1.png::CompressedTexture2D::780791675999999344::1723807618::1723808285::1::::<><>::
+lvl 11 2.png::CompressedTexture2D::6312722862035420352::1723807626::1723808285::1::::<><>::
+lvl 11 3.png::CompressedTexture2D::471067190810332516::1723807637::1723808285::1::::<><>::
 no lvl 1 1.png::CompressedTexture2D::3147150311321588465::1723544248::1723544335::1::::<><>::
 no lvl 1 2.png::CompressedTexture2D::959460542234514034::1723544259::1723544335::1::::<><>::
 no lvl 2 1.png::CompressedTexture2D::8167355933651261576::1723544210::1723544335::1::::<><>::
@@ -62,6 +79,17 @@ no lvl 6 1.png::CompressedTexture2D::6382809411481600281::1723544033::1723544335
 no lvl 6 2.png::CompressedTexture2D::3154285158810400017::1723544049::1723544335::1::::<><>::
 no lvl 7 1.png::CompressedTexture2D::7331008380509975972::1723544283::1723544335::1::::<><>::
 no lvl 7 2.png::CompressedTexture2D::2796948214895198789::1723544300::1723544335::1::::<><>::
+no lvl 8 1.png::CompressedTexture2D::5166135542546527262::1723808078::1723808285::1::::<><>::
+no lvl 8 2.png::CompressedTexture2D::7487156798520330752::1723808094::1723808285::1::::<><>::
+no lvl 9 1.png::CompressedTexture2D::1803063487102581352::1723808136::1723808285::1::::<><>::
+no lvl 9 2.png::CompressedTexture2D::5074624713346168768::1723808149::1723808285::1::::<><>::
+no lvl 10 1.png::CompressedTexture2D::1202355885205935065::1723808048::1723808285::1::::<><>::
+no lvl 10 2.png::CompressedTexture2D::2095363284550568636::1723808059::1723808285::1::::<><>::
+no lvl 11 1.png::CompressedTexture2D::1427539009184096916::1723807875::1723808285::1::::<><>::
+no lvl 11 2.png::CompressedTexture2D::4926287963147471976::1723807994::1723808285::1::::<><>::
+playbutton onleveldescr 1.png::CompressedTexture2D::2301476216920651681::1723809296::1723809378::1::::<><>::
+playbutton onleveldescr 2.png::CompressedTexture2D::5608701368281270007::1723809320::1723809378::1::::<><>::
+playbutton onleveldescr 3.png::CompressedTexture2D::4691954153381274610::1723809335::1723809378::1::::<><>::
 ::res://art/fonts/::1723114416
 tahoma.ttf::FontFile::2940674959141692352::1632896602::1723114416::1::::<><>::
 ::res://art/menus/::1723371875
@@ -75,7 +103,7 @@ tilemap.png::CompressedTexture2D::3948921358878235855::1723006320::1723006336::1
 apple-bite-short.mp3::AudioStreamMP3::1448881769594953700::1723121678::1723121924::1::::<><>::
 nut.mp3::AudioStreamMP3::983395371757116491::1723121675::1723121924::1::::<><>::
 Yume 2kki OST - Cog Maze (Extended).mp3::AudioStreamMP3::4251587412184700638::1679002448::1723123791::1::::<><>::
-::res://art/sprites food/::1723000486
+::res://art/sprites food/::1723728539
 apple.png::CompressedTexture2D::4553067859912834057::1722997470::1723000486::1::::<><>::
 banana.png::CompressedTexture2D::927012862250946761::1722999778::1723000486::1::::<><>::
 bread.png::CompressedTexture2D::7802020448438707441::1723000206::1723000486::1::::<><>::
@@ -90,6 +118,7 @@ ice_cream.png::CompressedTexture2D::4996851096117939711::1723000380::1723000486:
 orange.png::CompressedTexture2D::5778745961615725531::1722998804::1723000486::1::::<><>::
 pizza.png::CompressedTexture2D::6853902137820533641::1722998581::1723000486::1::::<><>::
 soda.png::CompressedTexture2D::6252844592403035815::1722998649::1723000486::1::::<><>::
+watermelon.png::CompressedTexture2D::3581109624031541572::1723662553::1723728539::1::::<><>::
 ::res://art/sprites snake/::1723001579
 ::res://art/sprites snake/snake 1/::1723000486
 snake head sprite 1.png::CompressedTexture2D::6379535835325493277::1722997293::1723000486::1::::<><>::
@@ -100,29 +129,35 @@ snake sprite 2.png::CompressedTexture2D::3948352039019107798::1723000796::172300
 ::res://art/sprites snake/snake 3/::1723004504
 snake head sprite 3.png::CompressedTexture2D::6328696492979573056::1723001353::1723004504::1::::<><>::
 snake sprite 3.png::CompressedTexture2D::3507637081239618732::1723001225::1723004504::1::::<><>::
-::res://scenes/::1723654947
-main.gd::GDScript::-1::1723650606::0::1::::<>Node2D<>::
-main.tscn::PackedScene::6905292431367033740::1723654947::0::1::::<><>::uid://dp8vmonf5i5cv::::res://scenes/menus/main_menu.tscn<>res://scenes/main.gd<>uid://chvmqd7r1h3i7::::res://scenes/levels/lvl_1.tscn<>uid://ttjbrn3de57m::::res://scenes/levels/lvl_2.tscn
+::res://scenes/::1724282387
+main.gd::GDScript::-1::1724282237::0::1::::<>Node2D<>::
+main.tscn::PackedScene::6905292431367033740::1724282387::0::1::::<><>::uid://dp8vmonf5i5cv::::res://scenes/menus/main_menu.tscn<>res://scenes/main.gd<>uid://chvmqd7r1h3i7::::res://scenes/levels/lvl_1.tscn<>uid://ttjbrn3de57m::::res://scenes/levels/lvl_2.tscn<>uid://d2me7fwn4jgwm::::res://scenes/levels/lvl_3.tscn<>uid://cy1bsnn4hhisx::::res://scenes/levels/lvl_4.tscn
 ::res://scenes/buttons/::1723108971
 main_menu_button.tscn::PackedScene::4449927944241343604::1723108971::0::1::::<><>::uid://yrnvxpjriwot::::res://art/button/main menu 1.png<>uid://b0djpgbyjojws::::res://art/button/main menu 3.png<>uid://caderxj4pqq4o::::res://art/button/main menu 2.png
 replay_button.tscn::PackedScene::7511388890348511373::1723108971::0::1::::<><>::uid://cw8x3h1hruan3::::res://art/button/replay 1.png<>uid://bjbgts4mwadmc::::res://art/button/replay 3.png<>uid://bgxuc85jv0p5d::::res://art/button/replay 2.png
-::res://scenes/food/::1723654670
+::res://scenes/food/::1723811715
 Apple.gd::GDScript::-1::1723112568::0::1::::<>Node2D<>::
 Apple.tscn::PackedScene::3778004489052109625::1723635077::0::1::::<><>::res://scenes/food/Apple.gd<>uid://b54smk8niy186::::res://art/sprites food/apple.png
 Donut.gd::GDScript::-1::1723566071::0::1::::<>Node2D<>::
 Donut.tscn::PackedScene::8851794988090463290::1723654670::0::1::::<><>::res://scenes/food/Apple.gd<>uid://c0dv1d41w6ph5::::res://art/sprites food/donut.png
-::res://scenes/levels/::1723654669
+Pizza.tscn::PackedScene::2703109383035736925::1723811715::0::1::::<><>::res://scenes/food/Apple.gd<>uid://c4wc1cp76wwnx::::res://art/sprites food/pizza.png
+::res://scenes/levels/::1724282387
 lvl_1.gd::GDScript::-1::1723654139::0::1::::<>Node2D<>::
 lvl_1.tscn::PackedScene::5308272590114606488::1723654669::0::1::::<><>::res://scenes/levels/lvl_1.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://3o25pwr3refe::::res://scenes/player/player.tscn<>uid://d2pic0kmax8f4::::res://scenes/menus/game_over_menu.tscn<>uid://wxl165xaak4a::::res://art/menus/lvl 1.png<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf<>uid://b1tra2ggt8kb3::::res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn
-lvl_2.gd::GDScript::-1::1723654501::0::1::::<>Node2D<>::
-lvl_2.tscn::PackedScene::1373360359434357844::1723654669::0::1::::<><>::res://scenes/levels/lvl_2.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://3o25pwr3refe::::res://scenes/player/player.tscn<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://d2pic0kmax8f4::::res://scenes/menus/game_over_menu.tscn<>uid://dyd41gltgfkg5::::res://scenes/food/Donut.tscn<>uid://wxl165xaak4a::::res://art/menus/lvl 1.png<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf<>uid://b1tra2ggt8kb3::::res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn
-::res://scenes/menus/::1723654939
+lvl_2.gd::GDScript::-1::1723813056::0::1::::<>Node2D<>::
+lvl_2.tscn::PackedScene::1373360359434357844::1723813321::0::1::::<><>::res://scenes/levels/lvl_2.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://3o25pwr3refe::::res://scenes/player/player.tscn<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://d2pic0kmax8f4::::res://scenes/menus/game_over_menu.tscn<>uid://dyd41gltgfkg5::::res://scenes/food/Donut.tscn<>uid://wxl165xaak4a::::res://art/menus/lvl 1.png<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf<>uid://b1tra2ggt8kb3::::res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn
+lvl_3.gd::GDScript::-1::1723813448::0::1::::<>Node2D<>::
+lvl_3.tscn::PackedScene::9079433672963140936::1723813901::0::1::::<><>::res://scenes/levels/lvl_3.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://3o25pwr3refe::::res://scenes/player/player.tscn<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://dyd41gltgfkg5::::res://scenes/food/Donut.tscn<>uid://bern21aarg6xt::::res://scenes/food/Pizza.tscn<>uid://d2pic0kmax8f4::::res://scenes/menus/game_over_menu.tscn<>uid://wxl165xaak4a::::res://art/menus/lvl 1.png<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf<>uid://b1tra2ggt8kb3::::res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn
+lvl_4.gd::GDScript::-1::1724282383::0::1::::<>Node2D<>::
+lvl_4.tscn::PackedScene::6511141001800864035::1724282387::0::1::::<><>::res://scenes/levels/lvl_4.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://3o25pwr3refe::::res://scenes/player/player.tscn<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://dyd41gltgfkg5::::res://scenes/food/Donut.tscn<>uid://bern21aarg6xt::::res://scenes/food/Pizza.tscn<>uid://d2pic0kmax8f4::::res://scenes/menus/game_over_menu.tscn<>uid://wxl165xaak4a::::res://art/menus/lvl 1.png<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf<>uid://b1tra2ggt8kb3::::res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn
+lvl_5.tscn::PackedScene::3771403206126699849::1724282518::0::1::::<><>::res://scenes/levels/lvl_4.gd<>uid://bwi5fmpub3k1d::::res://art/menus/tilemap.png<>uid://3o25pwr3refe::::res://scenes/player/player.tscn<>uid://bt3dggl2p6ssf::::res://scenes/food/Apple.tscn<>uid://dyd41gltgfkg5::::res://scenes/food/Donut.tscn<>uid://bern21aarg6xt::::res://scenes/food/Pizza.tscn<>uid://d2pic0kmax8f4::::res://scenes/menus/game_over_menu.tscn<>uid://wxl165xaak4a::::res://art/menus/lvl 1.png<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf<>uid://b1tra2ggt8kb3::::res://art/sounds/Yume 2kki OST - Cog Maze (Extended).mp3<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn
+::res://scenes/menus/::1724282387
 game_over_menu.gd::GDScript::-1::1723652683::0::1::::<>CanvasLayer<>::
 game_over_menu.tscn::PackedScene::9085817132224980867::1723654670::0::1::::<><>::uid://dy7yv347bnmkk::::res://art/menus/game over.png<>res://scenes/menus/game_over_menu.gd<>uid://b4ntwsspekdo3::::res://scenes/buttons/main_menu_button.tscn<>uid://dfatqidpiop7b::::res://scenes/buttons/replay_button.tscn<>uid://bh5qqs5whlyvo::::res://art/fonts/tahoma.ttf
-leveles_menu.gd::GDScript::-1::1723552931::0::1::::<>Node2D<>::
-leveles_menu.tscn::PackedScene::8571937048632781133::1723654939::0::1::::<><>::uid://2ngkuln7n36h::::res://art/menus/snake2.png<>res://scenes/menus/leveles_menu.gd<>uid://bk3rduljfhpy4::::res://art/button/levels/no lvl 1 1.png<>uid://nw1f7ikg8oas::::res://art/button/levels/no lvl 1 2.png<>uid://domlfn03dywhs::::res://art/button/levels/no lvl 2 1.png<>uid://bqu6iugac4trn::::res://art/button/levels/no lvl 2 2.png<>uid://cj8q875o7cgqr::::res://art/button/levels/no lvl 3 1.png<>uid://m1ads0m6ryqd::::res://art/button/levels/no lvl 3 2.png<>uid://ca3qf4g3vh2ro::::res://art/button/levels/no lvl 4 1.png<>uid://bp5hvk1jnmxim::::res://art/button/levels/no lvl 4 2.png<>uid://de4no4siuep52::::res://art/button/levels/no lvl 5 1.png<>uid://c0f44vc52e8tt::::res://art/button/levels/no lvl 5 2.png<>uid://cw64654rg8djt::::res://art/button/levels/no lvl 6 1.png<>uid://bk67u61hf0nv2::::res://art/button/levels/no lvl 6 2.png<>uid://dcpgvwk2t56ua::::res://art/button/levels/no lvl 7 1.png<>uid://bf34lfx2a2jmr::::res://art/button/levels/no lvl 7 2.png
-main_menu.gd::GDScript::-1::1723654612::0::1::::<>CanvasLayer<>::
-main_menu.tscn::PackedScene::8281516413585691857::1723654670::0::1::::<><>::res://scenes/menus/main_menu.gd<>uid://binx26p6njhwv::::res://art/menus/snake1.png<>uid://v4y1pn22rixq::::res://art/button/scorepng 1.png<>uid://b1ggneglh8egq::::res://art/button/scorepng 3.png<>uid://d12c3fl6k4wo1::::res://art/button/scorepng 2.png<>uid://b53qy7abm80ft::::res://art/button/red cross 1.png<>uid://th5ptk17nylg::::res://art/button/red cross 2.png<>uid://ladjklreiu41::::res://art/button/button play 1.png<>uid://crr4ouqmc00u2::::res://art/button/button play 3.png<>uid://xbbfum2jpi40::::res://art/button/button play 2.png<>uid://dhfhc4il5fkpi::::res://art/button/button snake 1.png<>uid://ct4jw7ht024en::::res://art/button/button snake 3.png<>uid://brr3jf3a4ito3::::res://art/button/button snake 2.png<>uid://d0bnsoex4ty84::::res://art/button/button bush 1.png<>uid://4rpdrr6kqs7u::::res://art/button/button bush 3.png<>uid://qwt6l1igtn5t::::res://art/button/button bush 2.png<>uid://dueksy0ik7rmr::::res://scenes/menus/leveles_menu.tscn
+leveles_menu.gd::GDScript::-1::1724281544::0::1::::<>Node2D<>::
+leveles_menu.tscn::PackedScene::8571937048632781133::1724282387::0::1::::<><>::uid://2ngkuln7n36h::::res://art/menus/snake2.png<>res://scenes/menus/leveles_menu.gd<>uid://bk3rduljfhpy4::::res://art/button/levels/no lvl 1 1.png<>uid://nw1f7ikg8oas::::res://art/button/levels/no lvl 1 2.png<>uid://domlfn03dywhs::::res://art/button/levels/no lvl 2 1.png<>uid://bqu6iugac4trn::::res://art/button/levels/no lvl 2 2.png<>uid://cj8q875o7cgqr::::res://art/button/levels/no lvl 3 1.png<>uid://m1ads0m6ryqd::::res://art/button/levels/no lvl 3 2.png<>uid://ca3qf4g3vh2ro::::res://art/button/levels/no lvl 4 1.png<>uid://bp5hvk1jnmxim::::res://art/button/levels/no lvl 4 2.png<>uid://de4no4siuep52::::res://art/button/levels/no lvl 5 1.png<>uid://c0f44vc52e8tt::::res://art/button/levels/no lvl 5 2.png<>uid://cw64654rg8djt::::res://art/button/levels/no lvl 6 1.png<>uid://bk67u61hf0nv2::::res://art/button/levels/no lvl 6 2.png<>uid://dcpgvwk2t56ua::::res://art/button/levels/no lvl 7 1.png<>uid://bf34lfx2a2jmr::::res://art/button/levels/no lvl 7 2.png<>uid://cfurq6h283pvi::::res://art/button/levels/no lvl 8 1.png<>uid://c0p6hmqojl7vp::::res://art/button/levels/level1.png<>uid://dew3m4v44vitc::::res://art/button/levels/no lvl 8 2.png<>uid://0xogsgkcccdk::::res://art/button/levels/no lvl 9 1.png<>uid://cekgleywhbghc::::res://art/button/levels/no lvl 9 2.png<>uid://reovjm8s5e54::::res://art/button/levels/no lvl 10 1.png<>uid://dess75qh8wb1l::::res://art/button/cross 1.png<>uid://44alegx4yc3m::::res://art/button/levels/no lvl 10 2.png<>uid://cx64igdcdrjb2::::res://art/button/cross 2.png<>uid://ulrmg52kn8x1::::res://art/button/levels/no lvl 11 1.png<>uid://ccglii6nrbr2w::::res://art/button/levels/no lvl 11 2.png<>uid://7138hpxp4s4h::::res://art/button/levels/playbutton onleveldescr 1.png<>uid://b7322gd0fgq7s::::res://art/button/levels/playbutton onleveldescr 3.png<>uid://cgkpbeotf1aa6::::res://art/button/levels/level3.png<>uid://cl55qy4jauin4::::res://art/button/levels/playbutton onleveldescr 2.png<>uid://ld3ubtrkqv63::::res://art/button/levels/level4.png<>uid://ba1tnli8ktsbe::::res://art/button/levels/level5.png<>uid://c3ckfwmliclgj::::res://art/button/levels/level2.png
+main_menu.gd::GDScript::-1::1724281669::0::1::::<>CanvasLayer<>::
+main_menu.tscn::PackedScene::8281516413585691857::1724282387::0::1::::<><>::res://scenes/menus/main_menu.gd<>uid://binx26p6njhwv::::res://art/menus/snake1.png<>uid://v4y1pn22rixq::::res://art/button/scorepng 1.png<>uid://b1ggneglh8egq::::res://art/button/scorepng 3.png<>uid://d12c3fl6k4wo1::::res://art/button/scorepng 2.png<>uid://b53qy7abm80ft::::res://art/button/red cross 1.png<>uid://th5ptk17nylg::::res://art/button/red cross 2.png<>uid://ladjklreiu41::::res://art/button/button play 1.png<>uid://crr4ouqmc00u2::::res://art/button/button play 3.png<>uid://xbbfum2jpi40::::res://art/button/button play 2.png<>uid://dhfhc4il5fkpi::::res://art/button/button snake 1.png<>uid://ct4jw7ht024en::::res://art/button/button snake 3.png<>uid://brr3jf3a4ito3::::res://art/button/button snake 2.png<>uid://d0bnsoex4ty84::::res://art/button/button bush 1.png<>uid://4rpdrr6kqs7u::::res://art/button/button bush 3.png<>uid://qwt6l1igtn5t::::res://art/button/button bush 2.png<>uid://dueksy0ik7rmr::::res://scenes/menus/leveles_menu.tscn<>uid://dess75qh8wb1l::::res://art/button/cross 1.png<>uid://cx64igdcdrjb2::::res://art/button/cross 2.png<>uid://cg5i8hpanucvs::::res://art/menus/description.png
 ::res://scenes/player/::1723654670
 Player.gd::GDScript::-1::1723649173::0::1::::<>Node2D<>::
 player.tscn::PackedScene::1995882665690026918::1723654670::0::1::::<><>::res://scenes/player/Player.gd<>uid://n4ubgnc4y586::::res://scenes/player/player_head.tscn<>uid://bahr3d8g4nlv4::::res://scenes/player/player_body.tscn<>uid://oamm4cyuq75p::::res://art/sounds/nut.mp3
