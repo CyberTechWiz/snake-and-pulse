@@ -1,14 +1,14 @@
 TextureRect
+Timer
+AnimatedSprite2D
 TextureButton
 Label
 Node2D
-Timer
 Node
 AudioStreamPlayer2D
 AudioStreamPlayer3D
 RichTextLabel
 Button
-AnimatedSprite2D
 Sprite2D
 TileMap
 CanvasLayer

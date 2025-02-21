@@ -68,6 +68,38 @@ func _on_no_lvl_4_pressed():
 	num_of_lvl = 4
 	emit_signal("hide_cross_button1")
 
+
+func _on_no_lvl_5_pressed():
+	$level5.show()
+	$cross_button2.show()
+	$play_button.show()
+	num_of_lvl = 5
+	emit_signal("hide_cross_button1")
+	
+func _on_no_lvl_6_pressed():
+	pass # Replace with function body.
+
+
+func _on_no_lvl_7_pressed():
+	pass # Replace with function body.
+
+
+func _on_no_lvl_8_pressed():
+	pass # Replace with function body.
+
+
+func _on_no_lvl_9_pressed():
+	pass # Replace with function body.
+
+
+func _on_no_lvl_10_pressed():
+	pass # Replace with function body.
+
+
+func _on_no_lvl_11_pressed():
+	pass # Replace with function body.
+
+
 func _on_play_button_pressed():
 	$play_button.hide()
 	$cross_button2.hide()
@@ -134,3 +166,5 @@ func _on_cross_button_2_pressed():
 		$level10.hide()
 	elif num_of_lvl ==  11:
 		$level11.hide()
+
+

@@ -8,7 +8,14 @@ func _ready():
 	$lvl_2.hide()
 	$lvl_3.hide()
 	$lvl_4.hide()
-
+	$lvl_5.hide()
+	#$lvl_6.hide()
+	#$lvl_7.hide()
+	#$lvl_8.hide()
+	#$lvl_9.hide()
+	#$lvl_10.hide()
+	#$lvl_11.hide()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -112,3 +119,5 @@ func _on_main_menu_playlvl_11():
 func _on_lvl_11_main_menu():
 	$Main_menu.show()	
 	$lvl_11.hide()
+
+

@@ -31,6 +31,7 @@ var can_move : bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$sodaef.hide()
 	lvl = get_parent()  # Получаем ссылку на родительский узел
 	if lvl != null:
 		if lvl.has_method("get_food_pos"):
@@ -171,4 +172,8 @@ func _on_lvl_1_main_menu():
 	$MoveTimer.stop()
 	can_move = false
 
-
+#func hide_soda():
+	#$sodaef.hide()
+#
+#func show_soda():
+	#$sodaef.show()

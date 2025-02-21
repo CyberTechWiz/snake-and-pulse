@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5m8fmbfgdfa7"]
+[gd_scene load_steps=8 format=3 uid="uid://c5m8fmbfgdfa7"]
 
 [ext_resource type="PackedScene" uid="uid://dp8vmonf5i5cv" path="res://scenes/menus/main_menu.tscn" id="1_cc2ku"]
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_guw4u"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ttjbrn3de57m" path="res://scenes/levels/lvl_2.tscn" id="4_pc3r1"]
 [ext_resource type="PackedScene" uid="uid://d2me7fwn4jgwm" path="res://scenes/levels/lvl_3.tscn" id="5_ijw86"]
 [ext_resource type="PackedScene" uid="uid://cy1bsnn4hhisx" path="res://scenes/levels/lvl_4.tscn" id="6_wlxge"]
+[ext_resource type="PackedScene" uid="uid://j47o6so6pnqb" path="res://scenes/levels/lvl_5.tscn" id="7_wj7gn"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_guw4u")
@@ -20,23 +21,26 @@ script = ExtResource("1_guw4u")
 
 [node name="lvl_4" parent="." instance=ExtResource("6_wlxge")]
 
+[node name="lvl_5" parent="." instance=ExtResource("7_wj7gn")]
+
 [connection signal="playlvl1" from="Main_menu" to="." method="_on_main_menu_playlvl_1"]
 [connection signal="playlvl1" from="Main_menu" to="lvl_1" method="playlvl1"]
+[connection signal="playlvl10" from="Main_menu" to="." method="_on_main_menu_playlvl_10"]
+[connection signal="playlvl11" from="Main_menu" to="." method="_on_main_menu_playlvl_11"]
 [connection signal="playlvl2" from="Main_menu" to="." method="_on_main_menu_playlvl_2"]
 [connection signal="playlvl2" from="Main_menu" to="lvl_2" method="playlvl2"]
 [connection signal="playlvl3" from="Main_menu" to="." method="_on_main_menu_playlvl_3"]
 [connection signal="playlvl3" from="Main_menu" to="lvl_3" method="playlvl3"]
 [connection signal="playlvl4" from="Main_menu" to="." method="_on_main_menu_playlvl_4"]
 [connection signal="playlvl4" from="Main_menu" to="lvl_4" method="playlvl4"]
-[connection signal="all_apple_score" from="lvl_1" to="Main_menu" method="_on_lvl_1_all_apple_score"]
+[connection signal="playlvl5" from="Main_menu" to="." method="_on_main_menu_playlvl_5"]
+[connection signal="playlvl5" from="Main_menu" to="lvl_5" method="playlvl5"]
+[connection signal="playlvl6" from="Main_menu" to="." method="_on_main_menu_playlvl_6"]
+[connection signal="playlvl7" from="Main_menu" to="." method="_on_main_menu_playlvl_7"]
+[connection signal="playlvl8" from="Main_menu" to="." method="_on_main_menu_playlvl_8"]
+[connection signal="playlvl9" from="Main_menu" to="." method="_on_main_menu_playlvl_9"]
 [connection signal="main_menu" from="lvl_1" to="." method="_on_lvl_1_main_menu"]
-[connection signal="update_all_apple_score" from="lvl_1" to="Main_menu" method="update_all_apple_score"]
-[connection signal="all_apple_score" from="lvl_2" to="Main_menu" method="_on_lvl_1_all_apple_score"]
 [connection signal="main_menu" from="lvl_2" to="." method="_on_lvl_2_main_menu"]
-[connection signal="update_all_apple_score" from="lvl_2" to="Main_menu" method="update_all_apple_score"]
-[connection signal="all_apple_score" from="lvl_3" to="Main_menu" method="_on_lvl_1_all_apple_score"]
 [connection signal="main_menu" from="lvl_3" to="." method="_on_lvl_3_main_menu"]
-[connection signal="update_all_apple_score" from="lvl_3" to="Main_menu" method="update_all_apple_score"]
-[connection signal="all_apple_score" from="lvl_4" to="Main_menu" method="_on_lvl_1_all_apple_score"]
 [connection signal="main_menu" from="lvl_4" to="." method="_on_lvl_4_main_menu"]
-[connection signal="update_all_apple_score" from="lvl_4" to="Main_menu" method="update_all_apple_score"]
+[connection signal="main_menu" from="lvl_5" to="." method="_on_lvl_5_main_menu"]

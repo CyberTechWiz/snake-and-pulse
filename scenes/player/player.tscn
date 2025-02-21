@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://3o25pwr3refe"]
+[gd_scene load_steps=6 format=3 uid="uid://3o25pwr3refe"]
 
 [ext_resource type="Script" path="res://scenes/player/Player.gd" id="1_lqus1"]
 [ext_resource type="PackedScene" uid="uid://n4ubgnc4y586" path="res://scenes/player/player_head.tscn" id="2_ve72v"]
 [ext_resource type="PackedScene" uid="uid://bahr3d8g4nlv4" path="res://scenes/player/player_body.tscn" id="3_3hdpc"]
 [ext_resource type="AudioStream" uid="uid://oamm4cyuq75p" path="res://art/sounds/nut.mp3" id="4_5qct2"]
+[ext_resource type="Texture2D" uid="uid://dt54j51rjdgls" path="res://art/other/soda2.png" id="5_faryv"]
 
 [node name="Player" type="Node2D"]
 script = ExtResource("1_lqus1")
@@ -18,6 +19,22 @@ stream = ExtResource("4_5qct2")
 
 [node name="StopDonut" type="Timer" parent="."]
 wait_time = 2.0
+
+[node name="sodaef" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -822.0
+offset_top = -755.0
+offset_right = 2121.0
+offset_bottom = 1574.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.72, 0.797)
+texture = ExtResource("5_faryv")
 
 [connection signal="timeout" from="MoveTimer" to="." method="_on_move_timer_timeout"]
 [connection signal="timeout" from="StopDonut" to="." method="_on_stop_donut_timeout"]
